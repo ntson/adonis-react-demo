@@ -11,7 +11,7 @@ const el = document.getElementById('app');
 render(
   <InertiaApp
     initialComponent={null}
-    initialPage={JSON.parse(el.dataset.page)}
+    initialPage={JSON.parse(el!.dataset.page!)}
     resolveComponent={(name) =>
       import(`./pages/${name}`).then((module) => module.default)
     }

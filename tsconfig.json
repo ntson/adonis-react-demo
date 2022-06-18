@@ -6,6 +6,9 @@
     "outDir": "build",
     "rootDir": "./",
     "sourceMap": true,
+    "lib": ["DOM"],
+    "jsx": "react",
+    "esModuleInterop": true,
     "paths": {
       "App/*": ["./app/*"],
       "Config/*": ["./config/*"],
